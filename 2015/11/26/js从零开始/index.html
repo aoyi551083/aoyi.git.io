@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://yoursite.com/2015/11/26/js从零开始/index.html">
 <meta property="og:site_name" content="Looking to the future">
 <meta property="og:description" content="js的引入方法有3种，和css一样，推荐用外部引入的方法：src是一个请求，穿插到HTML里面。var 变量，作用：声明变量，保存数据和性息用的onclick：点击，也就是点击过后的样式onmuseover：鼠标在上面时的样式onmuseout：鼠标移除后的样式arr:数组alert：在浏览器里弹出，缺点明显，不易调试console.log（）：和alert一样是调试用的，在审查元素里能找到str">
-<meta property="og:updated_time" content="2015-11-26T03:33:41.000Z">
+<meta property="og:updated_time" content="2015-11-26T03:36:02.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js从零开始">
 <meta name="twitter:description" content="js的引入方法有3种，和css一样，推荐用外部引入的方法：src是一个请求，穿插到HTML里面。var 变量，作用：声明变量，保存数据和性息用的onclick：点击，也就是点击过后的样式onmuseover：鼠标在上面时的样式onmuseout：鼠标移除后的样式arr:数组alert：在浏览器里弹出，缺点明显，不易调试console.log（）：和alert一样是调试用的，在审查元素里能找到str">
@@ -89,12 +89,25 @@
         <blockquote>
 <p>js的引入方法有3种，和css一样，推荐用外部引入的方法：<script type="text/javascript" src="index.js"></script>src是一个请求，穿插到HTML里面。<br>var 变量，作用：声明变量，保存数据和性息用的<br>onclick：点击，也就是点击过后的样式<br>onmuseover：鼠标在上面时的样式<br>onmuseout：鼠标移除后的样式<br>arr:数组<br>alert：在浏览器里弹出，缺点明显，不易调试<br>console.log（）：和alert一样是调试用的，在审查元素里能找到<br>string字符串<br>number数字类型<br>boolear布尔值<br>null空类型<br>underfined空类型<br>object对象类型<br>＝是赋值＝＝比较，是否相等<br>NaN非数字<br>运算符：++加 –减 *乘 %取模<br>关系运算符：&lt; &gt; &lt;=  ！＝＝不全等<br>for循环：基本格式for (var i = 0&gt;=<br>相等运算符：＝＝相等 ！＝不想等 ＝＝＝全等; i &lt; Things.length; i++)<br>{<br>   Things[i]<br>};<br>if的基本格式if(i&gt;0){<br>   i=xx；<br>};<br>HTML引入css和js的基本格式</p>
 </blockquote>
-<p><em>&lt;!doctype html&gt;</em><br><em><html></html></em><br><em><head></head></em><br><em><meta charset="utf-8"></em><br><em><title></title></em><br><em><link rel="stylesheet" type="text/css" href="css/    reset.css"></em><br><em><link rel="stylesheet" type="text/css" href="css/    index.css">外部引入css</em><br><em></em><br><em><body></body></em><br>   <em><div style="">引入css行间样式</div></em><br>   <em></em><br>   <em><script type="text/javascript" src="js/    index.js"></script>外部引入js</em><br><em></em><br><em></em></p>
-
+<pre><code><span class="doctype">&lt;!doctype html&gt;</span>
+<span class="tag">&lt;<span class="title">html</span>&gt;</span>
+<span class="tag">&lt;<span class="title">head</span>&gt;</span>                                            
+<span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>/&gt;</span>                        
+<span class="tag">&lt;<span class="title">title</span>&gt;</span><span class="tag">&lt;/<span class="title">title</span>&gt;</span>                                
+<span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">type</span>=<span class="value">"text/css"</span> <span class="attribute">href</span>=<span class="value">"css/    reset.css"</span>/&gt;</span>                    
+<span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">type</span>=<span class="value">"text/css"</span> <span class="attribute">href</span>=<span class="value">"css/    index.css"</span>/&gt;</span>外部引入css              
+<span class="tag">&lt;/<span class="title">head</span>&gt;</span>
+<span class="tag">&lt;<span class="title">body</span>&gt;</span>
+   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">style</span>=<span class="value">""</span>&gt;</span>引入css行间样式
+   <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+   <span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span> <span class="attribute">src</span>=<span class="value">"js/    index.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>外部引入js
+<span class="tag">&lt;/<span class="title">body</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">html</span>&gt;</span>
+</code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/11/26/js从零开始/" data-id="cihfor8190002ghuf1hg8gsfb" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/11/26/js从零开始/" data-id="cihfou8u80002gquf80u33ix0" class="article-share-link">Share</a>
       
       
     </footer>

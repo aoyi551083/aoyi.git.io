@@ -65,6 +65,46 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-js声明函数和函数表达式" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/11/28/js声明函数和函数表达式/" class="article-date">
+  <time datetime="2015-11-28T01:20:59.000Z" itemprop="datePublished">2015-11-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/11/28/js声明函数和函数表达式/">js声明函数和函数表达式</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>说函数之前先讲一下浏览器解析js前先做的事<br>1.把变量，函数表达式的声明提到当前作用域的顶端<br>2把函数赋值<br>声明函数：是使用function关键字加函数名声明的函数<br>        function fn(){<br>          console.log(123);<br>        }<br>函数表达式：就是使用function关键字，没有函数名赋值给一个变量的函数，就是使用function关键字但是没有函数名的函数。<br>        var b = function(){<br>            console.log(456);<br>        }<br>()表示执行<br>声明函数和函数表达式的区别：<br>函数表达式可以使用（）操作符立即执行，函数声明不可以。<br>        （function fn(){<br>                  console.log(123);<br>         }）（）；<br>()();第一个（）把匿名函数定义成函数表达式，第二个（）表示执行，如上。<br>给大家讲一下作用域的问题：<br>全局变量可以在任何地方访问。<br>函数内部的变量，对外部是不可见的。<br>函数内部可以访问外部的变量。</p>
+</blockquote>
+<p><em>在函数里，每个函数都有一个默认返回值undefined</em></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/11/28/js声明函数和函数表达式/" data-id="cihifnqzi0002chuf0y2ay6gp" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-js从零开始" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/11/26/js从零开始/" class="article-date">
@@ -108,7 +148,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/11/26/js从零开始/" data-id="cihg44ppv0002mquftsfcopkw" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/11/26/js从零开始/" data-id="cihifnqzl0003chufzx5gdapk" class="article-share-link">Share</a>
       
       
     </footer>
@@ -149,7 +189,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/11/25/css的标签和属性/" data-id="cihg44ppj0000mqufnwdqleqt" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/11/25/css的标签和属性/" data-id="cihifnqz70000chufhffq51az" class="article-share-link">Share</a>
       
       
     </footer>
@@ -185,52 +225,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/11/25/html和css标签和属性/" data-id="cihg44ppy0003mquf1lf7um8z" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/11/25/hello-world/" class="article-date">
-  <time datetime="2015-11-25T10:10:38.000Z" itemprop="datePublished">2015-11-25</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/25/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/11/25/hello-world/" data-id="cihg44pq10004mquffc0ntk45" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/11/25/html和css标签和属性/" data-id="cihifnqzp0004chuf08pv5hul" class="article-share-link">Share</a>
       
       
     </footer>
@@ -256,7 +251,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/11/25/开始微博/" data-id="cihg44pps0001mqufjvt8jazw" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/11/25/开始微博/" data-id="cihifnqzf0001chufe9poq4uc" class="article-share-link">Share</a>
       
       
     </footer>
@@ -392,6 +387,10 @@
       <ul>
         
           <li>
+            <a href="/2015/11/28/js声明函数和函数表达式/">js声明函数和函数表达式</a>
+          </li>
+        
+          <li>
             <a href="/2015/11/26/js从零开始/">js从零开始</a>
           </li>
         
@@ -404,35 +403,17 @@
           </li>
         
           <li>
-            <a href="/2015/11/25/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
             <a href="/2015/11/25/开始微博/">(no title)</a>
           </li>
         
       </ul>
     </div>
   </div>
+
+  
 </aside>
         
       </div>
-        <!-- 多说评论框 start -->
-  <div class="ds-thread" data-thread-key="http://aoyi551083.duoshuo.com/" data-title="留言" data-url="http://aoyi551083.duoshuo.com/"></div>
-<!-- 多说评论框 end -->
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"aoyi551083"};
-  (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0] 
-     || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
-  </script>
-<!-- 多说公共JS代码 end --> 
       <footer id="footer">
   
   <div class="outer">

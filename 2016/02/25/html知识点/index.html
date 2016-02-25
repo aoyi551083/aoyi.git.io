@@ -25,7 +25,7 @@ html基本格式&amp;lt;html&amp;gt;
         &amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;
         &amp;lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css&quot;/&amp;gt;
     &amp;lt;/head&amp;gt">
-<meta property="og:updated_time" content="2016-02-25T12:16:02.000Z">
+<meta property="og:updated_time" content="2016-02-25T13:11:18.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="html知识点">
 <meta name="twitter:description" content="&amp;gt;
@@ -139,12 +139,30 @@ html基本格式&amp;lt;html&amp;gt;
 </li>
 <li><p>br 换行标签</p>
 </li>
-<li><p>hr 分割线标签</p>
-</li>
+<li>br:<pre><code><span class="tag">&lt;<span class="title">body</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span>&gt;</span>中华<span class="tag">&lt;/<span class="title">hr</span>&gt;</span>人命共和国<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">body</span>&gt;</span>
+</code></pre></li>
+<li>hr 分割线标签</li>
+<li>hr：<pre><code><span class="tag">&lt;<span class="title">body</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span>&gt;</span>中华<span class="tag">&lt;/<span class="title">hr</span>&gt;</span>人命共和国<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">body</span>&gt;</span>
+</code></pre></li>
 <li><p>video 标签定义视频，比如电影片段或其他视频流。</p>
 </li>
 <li><p>base 标签可以改变这一点。浏览器随后将不再使用当前文档的 URL，而使用指定的基本 URL 来解析所有的相对 URL。这其中包括 a、img、link、form 标签中的 URL。必须位于 head 元素内部。</p>
 </li>
+<li><p>base标签写法：</p>
+<pre><code><span class="tag">&lt;<span class="title">head</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">base</span> <span class="attribute">href</span>=<span class="value">"http://www.w3school.com.cn/i/"</span> /&gt;</span>
+    <span class="tag">&lt;<span class="title">base</span> <span class="attribute">target</span>=<span class="value">"_blank"</span> /&gt;</span>
+<span class="tag">&lt;/<span class="title">head</span>&gt;</span>
+
+<span class="tag">&lt;<span class="title">body</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"eg_smile.gif"</span> /&gt;</span>
+    <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"http://www.w3school.com.cn"</span>&gt;</span>W3School<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">body</span>&gt;</span>
+</code></pre></li>
 <li><p>b标签这是粗体文本</p>
 </li>
 <li><p>address 标签定义文档或文章的作者/拥有者的联系信息。<br>如果 address 元素位于 body 元素内，则它表示文档联系信息。<br>如果 address 元素位于 article 元素内，则它表示文章的联系信息。<br>address 元素中的文本通常呈现为斜体。大多数浏览器会在 address 元素前后添加折行。</p>
@@ -153,17 +171,31 @@ html基本格式&amp;lt;html&amp;gt;
 </li>
 <li><p>q 标签定义短的引用。</p>
 </li>
-<li><p>blockquote 标签定义长的引用。</p>
-</li>
+<li>q标签：<pre><code><span class="tag">&lt;<span class="title">body</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span>&gt;</span>中华<span class="tag">&lt;<span class="title">q</span>&gt;</span>人命共和<span class="tag">&lt;/<span class="title">q</span>&gt;</span>国<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">body</span>&gt;</span>
+</code></pre></li>
+<li>blockquote 标签定义长的引用。</li>
+<li>blockquote 用法和q一样</li>
 <li><p>style 标签用于为 HTML 文档定义样式信息。</p>
 </li>
 <li><p>列表</p>
 </li>
 <li></li>
-<li><p>无序列表 ul li ul有默认margin和padding</p>
-</li>
+<li>无序列表 ul li ul有默认margin和padding</li>
+<li><p>无序列表格式</p>
+<pre><code><span class="tag">&lt;ul&gt;</span>
+    <span class="tag">&lt;li&gt;</span><span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt;</span><span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span>
+</code></pre></li>
 <li><p>有序列表 ol li ol有默认margin和padding</p>
 </li>
+<li>有序列表格式<pre><code><span class="tag">&lt;ol&gt;</span>
+    <span class="tag">&lt;li&gt;</span><span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt;</span><span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ol&gt;</span>
+</code></pre></li>
 <li><p>自定义列表 dl dt dd</p>
 </li>
 <li><p>自定义格式：</p>
@@ -201,9 +233,9 @@ html基本格式&amp;lt;html&amp;gt;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/02/25/html知识点/" data-id="cil28hjc30005hzuf1amvx0bj" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/02/25/html知识点/" data-id="cil2agkdp0005j3ufr24fyfcl" class="article-share-link">Share</a>
      <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="cil28hjc30005hzuf1amvx0bj" data-title="cil28hjc30005hzuf1amvx0bj" data-url="http://yoursite.com/2016/02/25/html知识点/"></div>
+      <div class="ds-thread" data-thread-key="cil2agkdp0005j3ufr24fyfcl" data-title="cil2agkdp0005j3ufr24fyfcl" data-url="http://yoursite.com/2016/02/25/html知识点/"></div>
       <!-- 多说评论框 end -->
       <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
      <script type="text/javascript">

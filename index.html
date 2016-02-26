@@ -87,18 +87,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong><em>常见的属性</em></strong><br>-<br>css注释方式 /**/<br>css引入方式<br>内联似：优点：优先级高，不会被其他样式覆盖影响。缺点：不利于维护，没有样式的内容分离<br>内部引用：不利于复用，适于单一页面<br>外部：利于复用，内容分离。缺点：增加一次请求</p>
-<p><strong>1.margin边距属性</strong><br>margin-top(设置顶边距)</p>
-<p>margin-right(设置右边距)<br>margin-bottom(设置底边距)<br>margin-left(设置左边距)</p>
-<p><strong>填充距属性：</strong><br>padding-top设置顶端真充距)<br>padding-right设置顶端真充距)<br>padding-bottom设置顶端真充距)<br>padding-left设置顶端真充距)<br><strong><em>2.padding</em></strong><br>padding-top设置顶端真充距)<br>padding-right设置顶端真充距)<br>padding-bottom设置顶端真充距)<br>padding-left设置顶端真充距)<br><strong>3.border(边框)</strong><br>border-top-width(顶端边框宽度)<br>border-right-width(右端边框宽度)<br>border-bottom-width(底端边框宽度)<br>border-left-width(d左边框宽度)<br>border-width(一次定义边框宽度)<br>border-color(设置边框颜色)<br>border-style(设置边框样式)<br>border-top(一次定义顶端各种属性)<br>border-right(一次定义右端各种属性)<br>border-bottom(一次定义底端各种属性)<br>border-left(一次定义左端各种属性)<br>width(定义宽度属性)<br>height(定义高度属性)<br>float(文字环绕在一个元素的四周)<br>clear(定义某一边是否有环绕)<br>solid /<em>实线框</em>/<br>dotted /<em>虚线框</em>/<br>double /<em>双线框</em>/<br>groove /<em>立体内凸框</em>/<br>ridge /<em>立体浮雕框</em>/<br>inset /<em>凹框</em>/<br>outset /<em>凸框</em>/<br><strong>4.定位（position） 即层属性</strong><br>Type：设定对象的定位方式。<br>有三种方式：Absolute（绝对定位）、Relative（相对定位）、Static（无特殊定位）。相对应的CSS属性是”position”。<br>Overflow：设置如果层的内容超出了层的大小时如何处理。有四种处理方式：visible，增加层的大小，从而将层的所有内容显示出来；hidden，保持层的大小不变，将超出层的内容剪裁掉；Scroll，总是显示滚动；Auto，只有在内容超出层的边界时才显示滚动条。相对应的CSS属性是”overflow”。 Placement：设置对象定位层的位置和大小。可以分别设置left（左边定位）、top（顶部定位）、width（宽）、height（高）。相对应的CSS属性分别是”left; top; width; height”。Clip：定义定位层的可视区域。区域外的部分为不可视区，为透明的。可以理解为在定位层上放一个矩形遮罩的效果。相对应的CSS属性是”clip”。<br><strong>5.font（字体）</strong><br>font-family(使用什么字体)<br>font-style(字体的样式，是否斜体)：normal/italic/oblique<br>font-variant(字体大小写)：normal/small-caps<br>font-weight(字体的粗细)：normal/bold/bolder/lithter<br>font-size(字体的大小)：absolute-size/relative-size/length/percentage<br><strong>6定义超链接：</strong><br>a：link {color:green;text-decoration:nore}(未访问过的状态)<br>a：visited {color:ren;text-decoration:underline;16pt}(访问过的状态)<br>a:hover {color:blue;text-decoration:underline;16pt}(鼠标激活的状态)<br>a:active<br><strong>z-index</strong><br>Z-Index：设置对象的层叠顺序。编号较大的层会显示在编号较小的层上边。变量值可以是正值也可以是负值。相对应的CSS属性是”z-index”。</p>
-<p>##overflow<br>Overflow：设置如果层的内容超出了层的大小时如何处理。有四种处理方式：visible，增加层的大小，从而将层的所有内容显示出来；hidden，保持层的大小不变，将超出层的内容剪裁掉；Scroll，总是显示滚动；Auto，只有在内容超出层的边界时才显示滚动条。相对应的CSS属性是”overflow”。 Placement：设置对象定位层的位置和大小。可以分别设置left（左边定位）、top（顶部定位）、width（宽）、height（高）。相对应的CSS属性分别是”left; top; width; height”。Clip：定义定位层的可视区域。区域外的部分为不可视区，为透明的。可以理解为在定位层上放一个矩形遮罩的效果。相对应的CSS属性是”clip”。<br><strong>鼠标光标样式：</strong><br>链接手指 CURSOR: hand<br>十字体 cursor:crosshair<br>箭头朝下 cursor:s-resize<br>十字箭头 cursor:move<br>箭头朝右 cursor:move<br>加一问号 cursor:help<br>箭头朝左 cursor:w-resize<br>箭头朝上 cursor:n-resize<br>箭头朝右上 cursor:ne-resize<br>箭头朝左上 cursor:nw-resize<br>文字I型 cursor:text<br>箭头斜右下 cursor:se-resize<br>箭头斜左下 cursor:sw-resize<br>漏斗 cursor:wait</p>
+        <p><strong><em>常见的属性</em></strong><br>    css注释方式 /**/<br>    css引入方式<br>    内联似：优点：优先级高，不会被其他样式覆盖影响。缺点：不利于维护，没有样式的内容分离<br>    内部引用：不利于复用，适于单一页面<br>    外部：利于复用，内容分离。缺点：增加一次请求</p>
+<p><strong>1.margin边距属性</strong><br>    margin-top(设置顶边距)<br>    margin-right(设置右边距)<br>    margin-bottom(设置底边距)<br>    margin-left(设置左边距)</p>
+<p><strong>填充距属性：</strong><br>    padding-top设置顶端真充距)<br>    padding-right设置顶端真充距)<br>    padding-bottom设置顶端真充距)<br>    padding-left设置顶端真充距)<br><strong><em>2.padding</em></strong><br>    padding-top设置顶端真充距)<br>    padding-right设置顶端真充距)<br>    padding-bottom设置顶端真充距)<br>    padding-left设置顶端真充距)<br><strong>3.border(边框)</strong><br>    border-top-width(顶端边框宽度)<br>    border-right-width(右端边框宽度)<br>    border-bottom-width(底端边框宽度)<br>    border-left-width(d左边框宽度)<br>    border-width(一次定义边框宽度)<br>    border-color(设置边框颜色)<br>    border-style(设置边框样式)<br>    border-top(一次定义顶端各种属性)<br>    border-right(一次定义右端各种属性)<br>    border-bottom(一次定义底端各种属性)<br>    border-left(一次定义左端各种属性)<br>    width(定义宽度属性)<br>    height(定义高度属性)<br>    float(文字环绕在一个元素的四周)<br>    clear(定义某一边是否有环绕)<br>    solid /<em>实线框</em>/<br>    dotted /<em>虚线框</em>/<br>    double /<em>双线框</em>/<br>    groove /<em>立体内凸框</em>/<br>    ridge /<em>立体浮雕框</em>/<br>    inset /<em>凹框</em>/<br>    outset /<em>凸框</em>/<br><strong>4.定位（position） 即层属性</strong><br>    Type：设定对象的定位方式。<br>    有三种方式：Absolute（绝对定位）、Relative（相对定位）、Static（无特殊定位）。相对应的CSS属性是”position”。<br>    Overflow：设置如果层的内容超出了层的大小时如何处理。有四种处理方式：visible，增加层的大小，从而将层的所有内容显示出来；hidden，保持层的大小不变，将超出层的内容剪裁掉；Scroll，总是显示滚动；Auto，只有在内容超出层的边界时才显示滚动条。相对应的CSS属性是”overflow”。 Placement：设置对象定位层的位置和大小。可以分别设置left（左边定位）、top（顶部定位）、width（宽）、height（高）。相对应的CSS属性分别是”left; top; width; height”。Clip：定义定位层的可视区域。区域外的部分为不可视区，为透明的。可以理解为在定位层上放一个矩形遮罩的效果。相对应的CSS属性是”clip”。<br><strong>5.font（字体）</strong><br>    font-family(使用什么字体)<br>    font-style(字体的样式，是否斜体)：normal/italic/oblique<br>    font-variant(字体大小写)：normal/small-caps<br>    font-weight(字体的粗细)：normal/bold/bolder/lithter<br>    font-size(字体的大小)：absolute-size/relative-size/length/percentage<br><strong>6定义超链接：</strong><br>    a：link {color:green;text-decoration:nore}(未访问过的状态)<br>    a：visited {color:ren;text-decoration:underline;16pt}(访问过的状态)<br>    a:hover {color:blue;text-decoration:underline;16pt}(鼠标激活的状态)<br>    a:active<br><strong>z-index</strong><br>    Z-Index：设置对象的层叠顺序。编号较大的层会显示在编号较小的层上边。变量值可以是正值也可以是负值。相对应的CSS属性是”z-index”。</p>
+<pre><code>#<span class="id">#overflow</span>
+<span class="attribute">Overflow</span>：设置如果层的内容超出了层的大小时如何处理。有四种处理方式：<span class="value">visible</span>，增加层的大小，从而将层的所有内容显示出来；<span class="value">hidden</span>，保持层的大小不变，将超出层的内容剪裁掉；<span class="value">Scroll</span>，总是显示滚动；<span class="attribute">Auto</span>，只有在内容超出层的边界时才显示滚动条。相对应的CSS属性是”<span class="attribute">overflow</span>”。 Placement：设置对象定位层的位置和大小。可以分别设置<span class="attribute">left</span>（左边定位）、<span class="attribute">top</span>（顶部定位）、<span class="attribute">width</span>（宽）、<span class="attribute">height</span>（高）。相对应的CSS属性分别是”<span class="attribute">left</span>; <span class="attribute">top</span>; <span class="attribute">width</span>; <span class="attribute">height</span>”。<span class="attribute">Clip</span>：定义定位层的可视区域。区域外的部分为不可视区，为透明的。可以理解为在定位层上放一个矩形遮罩的效果。相对应的CSS属性是”<span class="attribute">clip</span>”。
+</code></pre><p><strong>鼠标光标样式：</strong><br>    链接手指 CURSOR: hand<br>    十字体 cursor:crosshair<br>    箭头朝下 cursor:s-resize<br>    十字箭头 cursor:move<br>    箭头朝右 cursor:move<br>    加一问号 cursor:help<br>    箭头朝左 cursor:w-resize<br>    箭头朝上 cursor:n-resize<br>    箭头朝右上 cursor:ne-resize<br>    箭头朝左上 cursor:nw-resize<br>    文字I型 cursor:text<br>    箭头斜右下 cursor:se-resize<br>    箭头斜左下 cursor:sw-resize<br>    漏斗 cursor:wait</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/02/26/css回顾/" data-id="cil3qhk2c00007dufhgwhb6ui" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/02/26/css回顾/" data-id="cil3qkxs400007qufinxr46kq" class="article-share-link">Share</a>
      <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="cil3qhk2c00007dufhgwhb6ui" data-title="cil3qhk2c00007dufhgwhb6ui" data-url="http://yoursite.com/2016/02/26/css回顾/"></div>
+      <div class="ds-thread" data-thread-key="cil3qkxs400007qufinxr46kq" data-title="cil3qkxs400007qufinxr46kq" data-url="http://yoursite.com/2016/02/26/css回顾/"></div>
       <!-- 多说评论框 end -->
       <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
      <script type="text/javascript">
@@ -270,9 +271,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/02/25/html知识点/" data-id="cil3qhk2z00057dufw2xhimxd" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/02/25/html知识点/" data-id="cil3qkxso00057qufjysq6ssd" class="article-share-link">Share</a>
      <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="cil3qhk2z00057dufw2xhimxd" data-title="cil3qhk2z00057dufw2xhimxd" data-url="http://yoursite.com/2016/02/25/html知识点/"></div>
+      <div class="ds-thread" data-thread-key="cil3qkxso00057qufjysq6ssd" data-title="cil3qkxso00057qufjysq6ssd" data-url="http://yoursite.com/2016/02/25/html知识点/"></div>
       <!-- 多说评论框 end -->
       <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
      <script type="text/javascript">
@@ -449,9 +450,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/12/15/打地鼠/" data-id="cil3qhk2m00017dufir1q6333" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/12/15/打地鼠/" data-id="cil3qkxsc00017qufvisoabft" class="article-share-link">Share</a>
      <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="cil3qhk2m00017dufir1q6333" data-title="cil3qhk2m00017dufir1q6333" data-url="http://yoursite.com/2015/12/15/打地鼠/"></div>
+      <div class="ds-thread" data-thread-key="cil3qkxsc00017qufvisoabft" data-title="cil3qkxsc00017qufvisoabft" data-url="http://yoursite.com/2015/12/15/打地鼠/"></div>
       <!-- 多说评论框 end -->
       <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
      <script type="text/javascript">
@@ -491,9 +492,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/12/15/js/" data-id="cil3qhk2u00047dufqq8upilu" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/12/15/js/" data-id="cil3qkxsl00047qufm0mkztf9" class="article-share-link">Share</a>
      <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="cil3qhk2u00047dufqq8upilu" data-title="cil3qhk2u00047dufqq8upilu" data-url="http://yoursite.com/2015/12/15/js/"></div>
+      <div class="ds-thread" data-thread-key="cil3qkxsl00047qufm0mkztf9" data-title="cil3qkxsl00047qufm0mkztf9" data-url="http://yoursite.com/2015/12/15/js/"></div>
       <!-- 多说评论框 end -->
       <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
      <script type="text/javascript">
@@ -547,9 +548,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/11/28/js声明函数和函数表达式/" data-id="cil3qhk2p00027dufvlv0xzkf" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/11/28/js声明函数和函数表达式/" data-id="cil3qkxse00027qufgvtdrng0" class="article-share-link">Share</a>
      <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="cil3qhk2p00027dufvlv0xzkf" data-title="cil3qhk2p00027dufvlv0xzkf" data-url="http://yoursite.com/2015/11/28/js声明函数和函数表达式/"></div>
+      <div class="ds-thread" data-thread-key="cil3qkxse00027qufgvtdrng0" data-title="cil3qkxse00027qufgvtdrng0" data-url="http://yoursite.com/2015/11/28/js声明函数和函数表达式/"></div>
       <!-- 多说评论框 end -->
       <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
      <script type="text/javascript">
@@ -616,9 +617,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/11/26/js从零开始/" data-id="cil3qhk2r00037dufhpawf6wy" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/11/26/js从零开始/" data-id="cil3qkxsh00037qufn3at9eis" class="article-share-link">Share</a>
      <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="cil3qhk2r00037dufhpawf6wy" data-title="cil3qhk2r00037dufhpawf6wy" data-url="http://yoursite.com/2015/11/26/js从零开始/"></div>
+      <div class="ds-thread" data-thread-key="cil3qkxsh00037qufn3at9eis" data-title="cil3qkxsh00037qufn3at9eis" data-url="http://yoursite.com/2015/11/26/js从零开始/"></div>
       <!-- 多说评论框 end -->
       <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
      <script type="text/javascript">
@@ -673,9 +674,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/11/25/css的标签和属性/" data-id="cil3qhk3100067duf3rj2ifr0" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/11/25/css的标签和属性/" data-id="cil3qkxsr00067qufjdacn2o5" class="article-share-link">Share</a>
      <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="cil3qhk3100067duf3rj2ifr0" data-title="cil3qhk3100067duf3rj2ifr0" data-url="http://yoursite.com/2015/11/25/css的标签和属性/"></div>
+      <div class="ds-thread" data-thread-key="cil3qkxsr00067qufjdacn2o5" data-title="cil3qkxsr00067qufjdacn2o5" data-url="http://yoursite.com/2015/11/25/css的标签和属性/"></div>
       <!-- 多说评论框 end -->
       <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
      <script type="text/javascript">

@@ -65,6 +65,59 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-javascript的几种数据类型" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/03/01/javascript的几种数据类型/" class="article-date">
+  <time datetime="2016-03-01T11:30:39.000Z" itemprop="datePublished">2016-03-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/01/javascript的几种数据类型/">javascript的几种数据类型</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>••javascript 有种5基本数据类型••<br>≥分别是：<br>≥number（数字类型）<br>≥string（字符串类型）<br>≥underfined（空类型）<br>≥null（空类型）<br>≥boolen（布尔值）<br>≥<br>≥<br>≥<br>≥  1.number整数 可以通过10进制 8进制 16进制表示<br>≥<br>≥    浮点数 该数值必须包含一个小数点，小数点后面必须有一位数字，如果小数点后只有0，自动转换成整数<br>≥<br>≥    浮点数占据的空间内存是内存的两倍，极大极小的数字会用e科学表示法。<br>≥<br>≥    NaN<br>≥<br>≥    1、即非数值，是一个特殊的值，这个数值用于表示一个本来要返回数值的操作数，未返回数值的情况。比如任何数值除≥以0，本是不符合规范的，js里，这样的操作返回NaN（但是实际上，只有0除以0时返回NaN，其他则无穷值）。<br>≥    2、NaN有两个不同寻常的特点：任何涉及NaN的操作都会返回NaN，NaN值与任何值都不相等，包括本身。<br>≥    3、isNaN()函数，这个函数可以判断，传递的参数是否“不是数值”这里涉及数值转换的问题，例如“10”这个字符串就≥可以转换为10，但是“blue”这个字符串则无法转换为数字，所以isNaN(“blue”)==true<br>≥<br>≥    Number() 可以    任何类型<br>≥<br>≥<br>≥<br>≥<br>≥  2.string<br>≥   JavaScript 中 slice 、substr 和 substring的区别：<br>≥    1: String.slice(start,end): 一个新的字符串。包括字符串 stringObject 从 start 开始（包括 ≥start）到 end 结束（不包括 end）为止的所有字符.<br>≥    2: String.substring(start,end) 这个就有点特别了，它是先从start，end里找出一个较小的值. ≥然后从字符串的开始位置算起，截取较小值位置和较大值位置之间的<br>≥        字符串,截取出来的字符串的长度为较大值与较小值之间的差。<br>≥        一个新的字符串，该字符串值包含 stringObject 的一个子字符串，其内容是从 start 处到 stop-1 ≥处的所有字符，其长度为 stop 减 start。<br>≥    3: String.substr(start,end)  这个就是我们常用的从指定的位置(start)截取指定长度(end)的字符串.<br>≥        一个新的字符串，包含从 stringObject 的 start（包括 start 所指的字符） 处开始的 lenght ≥个字符。如果没有指定 lenght，那么返回的字符串包含从 start<br>≥        到 stringObject 的结尾的字符。<br>≥<br>≥    String 对象的方法 slice()、substring() 和 substr()  (不建议使用)≥都可返回字符串的指定部分。slice() 比 substring() 要灵活一些，因为它允许使用负数作为参数。slice() ≥与 substr() 有所不同，因为它用两个字符的位置来指定子串，而 substr() 则用字符位置和长度来指定子串。<br>≥<br>≥<br>≥<br>≥<br>≥  3.underfined和null<br>≥  JavaScript 中有两个特殊数据类型：undefined 和 null，下节介绍了 null 的判断，下面谈谈 undefined ≥的判断。<br>≥<br>≥    以下是不正确的用法：<br>≥<br>≥    var exp = undefined;<br>≥    if (exp == undefined)<br>≥    {<br>≥        alert(“undefined”);<br>≥    }<br>≥<br>≥<br>≥    exp 为 null 时，也会得到与 undefined 相同的结果，虽然 null 和 undefined 不一样。注意：要同时判断 ≥undefined 和 null 时可使用本法。<br>≥<br>≥<br>≥<br>≥    var exp = undefined;<br>≥    if (typeof(exp) == undefined)<br>≥    {<br>≥        alert(“undefined”);<br>≥    }<br>≥<br>≥<br>≥    typeof ≥返回的是字符串，有六种可能：”number”、”string”、”boolean”、”object”、”function”、”undefined”<br>≥<br>≥<br>≥<br>≥    以下是正确的用法：<br>≥<br>≥<br>≥<br>≥    var exp = undefined;<br>≥    if (typeof(exp) == “undefined”)<br>≥    {<br>≥        alert(“undefined”);<br>≥        }<br>≥    JS 中如何判断 null<br>≥<br>≥<br>≥    以下是不正确的用法：<br>≥<br>≥<br>≥<br>≥    var exp = null;<br>≥    if (exp == null)<br>≥    {<br>≥        alert(“is null”);<br>≥    }<br>≥<br>≥<br>≥    exp 为 undefined 时，也会得到与 null 相同的结果，虽然 null 和 undefined 不一样。注意：要同时判断 ≥null 和 undefined 时可使用本法。<br>≥<br>≥<br>≥<br>≥    var exp = null;<br>≥    if (!exp)<br>≥    {<br>≥        alert(“is null”);<br>≥    }<br>≥<br>≥<br>≥    如果 exp 为 undefined 或者数字零，也会得到与 null 相同的结果，虽然 null ≥和二者不一样。注意：要同时判断 null、undefined 和数字零时可使用本法。<br>≥<br>≥<br>≥<br>≥    var exp = null;<br>≥    if (typeof(exp) == “null”)<br>≥    {<br>≥        alert(“is null”);<br>≥    }<br>≥<br>≥<br>≥    为了向下兼容，exp 为 null 时，typeof 总返回 object。<br>≥<br>≥    var exp = null;<br>≥    if (isNull(exp))<br>≥    {<br>≥        alert(“is null”);<br>≥    }<br>≥<br>≥<br>≥    JavaScript 中没有 isNull 这个函数。<br>≥<br>≥<br>≥    以下是正确的用法：<br>≥<br>≥<br>≥<br>≥    var exp = null;<br>≥    if (!exp &amp;&amp; typeof(exp)!=”undefined” &amp;&amp; exp!=0)<br>≥    {<br>≥        alert(“is null”);<br>≥    }　<br>≥<br>≥<br>≥<br>≥<br>≥    4.boolean<br>≥    js中的boolean原始类型和Boolean引用类型<br>≥    js 代码<br>≥    1. var bFound = true;<br>≥    2. var bFlag = false;<br>≥    如上面的两行代码，boolean类型是JavaScript中的一种原始类型，它只有两种值：true和false。   ≥使用Boolean(value)方法可以强制转换任意值为boolean类型 js 代码<br>≥    1. alert(Boolean(‘’));<br>≥    2. alert(Boolean(‘hello’));<br>≥    3. alert(Boolean(100));<br>≥    4. alert(Boolean(0));<br>≥    5. alert(Boolean(NaN));<br>≥    6. alert(Boolean(null));<br>≥    7. alert(Boolean(undefined));<br>≥    8. alert(Boolean(new Object()));<br>≥    //output true     可以看出，当被转换的值为空字符串、数字0和NaN、null或者undefined时，转换为false≥，其它情况转换为true。所以当我们写if判断的时候需要注意这些特殊的情况，尤其是使用目前比较流行的“对象探测≥法”书写JS时。   “对象探测法”主要写法如下： js 代码<br>≥    1. var student = new Object();<br>≥    2. if (student.name) {<br>≥    3.   alert(student.name);<br>≥    4. } else {<br>≥    5.   student.name = ‘Tom’;<br>≥    6.   alert(student.name);<br>≥    7. }  </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/03/01/javascript的几种数据类型/" data-id="cil9ev55t00051wufvs32ejj4" class="article-share-link">Share</a>
+     <!-- 多说评论框 start -->
+      <div class="ds-thread" data-thread-key="cil9ev55t00051wufvs32ejj4" data-title="cil9ev55t00051wufvs32ejj4" data-url="http://yoursite.com/2016/03/01/javascript的几种数据类型/"></div>
+      <!-- 多说评论框 end -->
+      <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+     <script type="text/javascript">
+      var duoshuoQuery = {short_name:"changxiangru918"};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+      <!-- 多说公共JS代码 end -->
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-css回顾" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/02/26/css回顾/" class="article-date">
@@ -97,9 +150,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/02/26/css回顾/" data-id="cil3qn29l00008lufh7ngoyo1" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/02/26/css回顾/" data-id="cil9ev55700001wufx71ukx3r" class="article-share-link">Share</a>
      <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="cil3qn29l00008lufh7ngoyo1" data-title="cil3qn29l00008lufh7ngoyo1" data-url="http://yoursite.com/2016/02/26/css回顾/"></div>
+      <div class="ds-thread" data-thread-key="cil9ev55700001wufx71ukx3r" data-title="cil9ev55700001wufx71ukx3r" data-url="http://yoursite.com/2016/02/26/css回顾/"></div>
       <!-- 多说评论框 end -->
       <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
      <script type="text/javascript">
@@ -271,9 +324,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/02/25/html知识点/" data-id="cil3qn2a700058lufwisc7nmr" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/02/25/html知识点/" data-id="cil9ev55w00061wufdyny0be0" class="article-share-link">Share</a>
      <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="cil3qn2a700058lufwisc7nmr" data-title="cil3qn2a700058lufwisc7nmr" data-url="http://yoursite.com/2016/02/25/html知识点/"></div>
+      <div class="ds-thread" data-thread-key="cil9ev55w00061wufdyny0be0" data-title="cil9ev55w00061wufdyny0be0" data-url="http://yoursite.com/2016/02/25/html知识点/"></div>
       <!-- 多说评论框 end -->
       <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
      <script type="text/javascript">
@@ -450,9 +503,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/12/15/打地鼠/" data-id="cil3qn29u00018luf85fwd0h9" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/12/15/打地鼠/" data-id="cil9ev55h00011wuf7x0wemk6" class="article-share-link">Share</a>
      <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="cil3qn29u00018luf85fwd0h9" data-title="cil3qn29u00018luf85fwd0h9" data-url="http://yoursite.com/2015/12/15/打地鼠/"></div>
+      <div class="ds-thread" data-thread-key="cil9ev55h00011wuf7x0wemk6" data-title="cil9ev55h00011wuf7x0wemk6" data-url="http://yoursite.com/2015/12/15/打地鼠/"></div>
       <!-- 多说评论框 end -->
       <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
      <script type="text/javascript">
@@ -492,9 +545,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/12/15/js/" data-id="cil3qn2a300048lufnlomwbie" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/12/15/js/" data-id="cil9ev55q00041wufce6ufoyv" class="article-share-link">Share</a>
      <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="cil3qn2a300048lufnlomwbie" data-title="cil3qn2a300048lufnlomwbie" data-url="http://yoursite.com/2015/12/15/js/"></div>
+      <div class="ds-thread" data-thread-key="cil9ev55q00041wufce6ufoyv" data-title="cil9ev55q00041wufce6ufoyv" data-url="http://yoursite.com/2015/12/15/js/"></div>
       <!-- 多说评论框 end -->
       <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
      <script type="text/javascript">
@@ -548,9 +601,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/11/28/js声明函数和函数表达式/" data-id="cil3qn29w00028lufk566lo4t" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/11/28/js声明函数和函数表达式/" data-id="cil9ev55j00021wufkn2ole45" class="article-share-link">Share</a>
      <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="cil3qn29w00028lufk566lo4t" data-title="cil3qn29w00028lufk566lo4t" data-url="http://yoursite.com/2015/11/28/js声明函数和函数表达式/"></div>
+      <div class="ds-thread" data-thread-key="cil9ev55j00021wufkn2ole45" data-title="cil9ev55j00021wufkn2ole45" data-url="http://yoursite.com/2015/11/28/js声明函数和函数表达式/"></div>
       <!-- 多说评论框 end -->
       <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
      <script type="text/javascript">
@@ -617,9 +670,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/11/26/js从零开始/" data-id="cil3qn29z00038luf7c09yp1s" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/11/26/js从零开始/" data-id="cil9ev55n00031wufzyhoz9hv" class="article-share-link">Share</a>
      <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="cil3qn29z00038luf7c09yp1s" data-title="cil3qn29z00038luf7c09yp1s" data-url="http://yoursite.com/2015/11/26/js从零开始/"></div>
+      <div class="ds-thread" data-thread-key="cil9ev55n00031wufzyhoz9hv" data-title="cil9ev55n00031wufzyhoz9hv" data-url="http://yoursite.com/2015/11/26/js从零开始/"></div>
       <!-- 多说评论框 end -->
       <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
      <script type="text/javascript">
@@ -674,9 +727,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/11/25/css的标签和属性/" data-id="cil3qn2a900068luftc3pcnoj" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/11/25/css的标签和属性/" data-id="cil9ev56200071wufaqpxw83r" class="article-share-link">Share</a>
      <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="cil3qn2a900068luftc3pcnoj" data-title="cil3qn2a900068luftc3pcnoj" data-url="http://yoursite.com/2015/11/25/css的标签和属性/"></div>
+      <div class="ds-thread" data-thread-key="cil9ev56200071wufaqpxw83r" data-title="cil9ev56200071wufaqpxw83r" data-url="http://yoursite.com/2015/11/25/css的标签和属性/"></div>
       <!-- 多说评论框 end -->
       <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
      <script type="text/javascript">
@@ -814,7 +867,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">3</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -824,6 +877,10 @@
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2016/03/01/javascript的几种数据类型/">javascript的几种数据类型</a>
+          </li>
         
           <li>
             <a href="/2016/02/26/css回顾/">css回顾</a>
@@ -839,10 +896,6 @@
         
           <li>
             <a href="/2015/12/15/js/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2015/11/28/js声明函数和函数表达式/">js声明函数和函数表达式</a>
           </li>
         
       </ul>
